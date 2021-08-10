@@ -19,63 +19,63 @@
     <main class="main">
 
     <!-- Cuadrado -->
-    <section class="contenedor cuadrado">
+    <section class="contenedor">
       <h2>Cuadrado</h2>
       <img src="./img/cuadrado.png" alt="Cuadrado">
       <label for="">Digite la medida del lado: <br>
-          <input type="number">
+          <input type="number" id="InputCuadrado">
       </label>
       <div class="result">
           <div>
             <i class="fas fa-calculator"></i>
-            <p></p>
+            <p id="resultadoCuadrado"></p>
           </div>
-          <button>Perímetro</button>
-          <button>Área</button>
+          <button onclick="calcularPerimetroCuadrado()">Perímetro</button>
+          <button onclick="calcularAreaCuadrado()">Área</button>
       </div>
     </section>
 
     <!-- Triángulo -->
-    <section class="contenedor triangulo">
+    <section class="contenedor">
         <h2>Triangulo</h2>
         <img src="./img/triangulo.png" alt="Triangulo">
         <label for="">Digite la medidas:
-            <input type="number" placeholder="Lado A">
-            <input type="number" placeholder="Lado B">
-            <input type="number" placeholder="Base">
-            <input type="number" placeholder="Altura">
+            <input type="number" placeholder="Lado A" id="ladoA">
+            <input type="number" placeholder="Lado B" id="ladoB">
+            <input type="number" placeholder="Base" id="base">
+            <input type="number" placeholder="Altura" id="altura">
         </label>
         <div class="result">
             <div>
               <i class="fas fa-calculator"></i>
-              <p></p>
+              <p id="resultadoTriangulo"></p>
             </div>
-            <button>Perímetro</button>
-            <button>Área</button>
+            <button onclick="calcularPerimetroTriangulo()">Perímetro</button>
+            <button onclick="calcularAreaTriangulo()">Área</button>
         </div>
     </section>
 
     <!-- Círculo -->
-    <section class="contenedor circulo">
+    <section class="contenedor">
         <h2>Cuadrado</h2>
         <img src="./img/circulo.png" alt="Círculo">
-        <label for="">Digite el radio:
-            <input type="number">
+        <label for="">Digite la medida del radio:
+            <input type="number" id="InputCirculo">
         </label>
         <div class="result">
             <div>
               <i class="fas fa-calculator"></i>
-              <p></p>
+              <p id="resultadoCirculo"></p>
             </div>
-            <button>Perímetro</button>
-            <button>Área</button>
+            <button onclick="calcularPerimetroCirculo()">Perímetro</button>
+            <button onclick="calcularAreaCirculo()">Área</button>
         </div>
     </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p><i class="fas fa-square-root-alt"></i>Anouk Rímola <i class="far fa-smile-beam"></i></p>
+        <span><i class="fas fa-square-root-alt"></i>Anouk Rímola <i class="far fa-smile-beam"></i></span>
     </footer>
     <script src="./figuras.js"></script>
 </body>

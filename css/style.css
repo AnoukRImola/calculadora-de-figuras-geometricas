@@ -27,6 +27,13 @@ input{
     border-radius: 0.5rem;
 }
 
+p{
+    max-width: 9rem;
+    overflow-x: scroll;
+    overflow: auto;
+}
+
+
 /*Header*/
 header{
     display: flex;
@@ -108,7 +115,7 @@ label{
     background: transparent;
 }
 
-i,p{
+i,p,span{
     font-size: 2rem;
     color: white;
     padding: 1rem;
