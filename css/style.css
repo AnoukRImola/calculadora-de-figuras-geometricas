@@ -1,75 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
 
-
-
+/*Generales*/
 *{
     margin: 0;
     padding: 0;
     background: #3D466A;
 }
 
+button{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(#937EEE, #C07A, #F374B6);
+    color: white;
+    border: 1px solid whitesmoke;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+input{
+    max-width: 7rem;
+    background: white;
+    font-weight: bolder;
+    border: 1px solid #C07A;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/*Header*/
 header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 18rem;
-    border: seagreen solid 2px;
+    height: 20vh;
 }
 
 header > h1{
-    width: 30%;
-    height: 50%;
-    background: linear-gradient(#937EEE, #C07A, #F374B6);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    height: 18vh;
+    margin-top: 4rem;
 }
 
-
+/*Principal*/
 .main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 4rem 0;
 }
 
 .contenedor{
     min-width: 19rem;
     max-width: 19rem;
-    height: 30rem;
+    height: 25rem;
+    border: 1px solid whitesmoke;
     background: linear-gradient(#576184, #4C5777, #404A6B);
     border-radius: 2rem;
     box-shadow: 0.2rem 0.2rem 0.5rem #8c8e94;;
     margin-bottom: 3rem;
-}
-
-.cuadrado{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.cuadrado > h2{
+h2{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    background-color: green;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
 }
 
-.cuadrado > img{
+img{
     grid-column: 1fr;
     grid-row: 2 / 3;
-    background-color: red;
+    margin: auto;
 }
 
-.cuadrado > label{
+label{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: yellow;
+    margin: auto;
+    background: transparent;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: medium;
 }
 
-.cuadrado > p,button{
-    grid-column: 1 / 2;
+.result{
+    grid-column: 1 / 3;
     grid-row: 3 / 4;
-    background-color: blue;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 0.5rem;
 }
 
-.cuadrado > p,button:last-child{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    background-color: greenyellow;
+.result > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+i,p{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    background: transparent;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    border-top: 1px solid whitesmoke;
+    height: 15vh;
 }

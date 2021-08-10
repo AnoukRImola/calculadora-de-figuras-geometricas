@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b16888e43f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/fav.png">
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora de Figuras Geométricas</title>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Calculadora de Figuras Geométricas</h1>
+        <h1>Calculadora de Figuras Geométricas</h1>   
     </header>
 
     <!-- Main -->
@@ -19,40 +21,62 @@
     <!-- Cuadrado -->
     <section class="contenedor cuadrado">
       <h2>Cuadrado</h2>
-      <img src="./img/cuadrado.png" alt="cuadrado">
-      <label for="">Digite la medida del lado:
+      <img src="./img/cuadrado.png" alt="Cuadrado">
+      <label for="">Digite la medida del lado: <br>
           <input type="number">
       </label>
-      <p></p>
-      <button>Perímetro</button>
-      <button>Área</button>
+      <div class="result">
+          <div>
+            <i class="fas fa-calculator"></i>
+            <p></p>
+          </div>
+          <button>Perímetro</button>
+          <button>Área</button>
+      </div>
     </section>
 
     <!-- Triángulo -->
     <section class="contenedor triangulo">
         <h2>Triangulo</h2>
-        <img src="" alt="">
-        <label for="">Digite la medida del lado:
-            <input type="number">
+        <img src="./img/triangulo.png" alt="Triangulo">
+        <label for="">Digite la medidas:
+            <input type="number" placeholder="Lado A">
+            <input type="number" placeholder="Lado B">
+            <input type="number" placeholder="Base">
+            <input type="number" placeholder="Altura">
         </label>
-        <p></p>
-        <button>Perímetro</button>
-        <p></p>
-        <button>Área</button>
+        <div class="result">
+            <div>
+              <i class="fas fa-calculator"></i>
+              <p></p>
+            </div>
+            <button>Perímetro</button>
+            <button>Área</button>
+        </div>
     </section>
 
     <!-- Círculo -->
     <section class="contenedor circulo">
         <h2>Cuadrado</h2>
-        <img src="" alt="">
-        <label for="">Digite la medida del lado:
+        <img src="./img/circulo.png" alt="Círculo">
+        <label for="">Digite el radio:
             <input type="number">
         </label>
-        <p></p>
-        <button>Perímetro</button>
-        <button>Área</button>
+        <div class="result">
+            <div>
+              <i class="fas fa-calculator"></i>
+              <p></p>
+            </div>
+            <button>Perímetro</button>
+            <button>Área</button>
+        </div>
     </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><i class="fas fa-square-root-alt"></i>Anouk Rímola <i class="far fa-smile-beam"></i></p>
+    </footer>
     <script src="./figuras.js"></script>
 </body>
 </html>
